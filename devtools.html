@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <title>Dometik</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <style>
+      body,
+      table {
+        font-size: 12px;
+      }
+
+      th {
+        font-weight: normal;
+      }
+
+      th:first-child,
+      td:first-child {
+        width: 30%;
+      }
+
+      th:not(:first-child),
+      td:not(:first-child) {
+        width: 14%;
+      }
+
+      [data-tracker-id] {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body class="bg-dark text-light">
+    <nav class="navbar navbar-expand sticky-top navbar-light bg-light py-0">
+      <a class="navbar-brand d-flex align-items-center text-info">
+        <img
+          src="icons/icon-48.png"
+          class="img-fluid"
+          width="20"
+          height="20"
+        />
+        <span class="d-none d-lg-inline ml-1">Dometik</span>
+      </a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a id="check" class="nav-link" href="#">
+              <i class="fas fa-check-circle"></i>
+              Check page
+            </a>
+          </li>
+          <li class="nav-item">
+            <a id="download" class="nav-link disabled" href="#">
+              <i class="fas fa-file-csv"></i>
+              Download report
+            </a>
+          </li>
+          <li id="options" class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-cogs"></i>
+              Configuration
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="start" class="container-fluid">
+      <div
+        class="d-flex flex-column justify-content-center align-items-center p-5"
+      >
+        <p class="lead">
+          Click on
+          <button class="btn btn-sm btn-outline-light mx-2" disabled>
+            <i class="fas fa-check-circle"></i>
+            Check page
+          </button>
+          to start
+        </p>
+      </div>
+    </section>
+
+    <section id="output" class="container-fluid py-3"></section>
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/d4dec511d9.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Devtools -->
+    <script src="devtools.js"></script>
+  </body>
+</html>

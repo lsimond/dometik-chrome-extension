@@ -1,0 +1,104 @@
+<html>
+  <head>
+    <title>Dometik Options</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <body>
+      <div class="container py-3">
+        <div class="mb-3 d-flex align-items-center">
+          <img
+            src="icons/icon-128.png"
+            class="img-fluid"
+            width="36"
+            height="36"
+          />
+          <h1 class="text-info ml-2 mb-0">Dometik Options</h1>
+        </div>
+
+        <div class="row">
+          <form id="form" class="col-lg-6">
+            <div class="form-group">
+              <label for="container">Container</label>
+              <input
+                type="text"
+                class="form-control"
+                id="container"
+                aria-describedby="containerHelp"
+                placeholder="body"
+              />
+              <small id="containerHelp" class="form-text text-muted"
+                >The css selector of the element that contains all the elements
+                that need to be checked.</small
+              >
+            </div>
+            <div class="form-group">
+              <label for="elements">Elements</label>
+              <input
+                type="text"
+                class="form-control"
+                id="elements"
+                aria-describedby="elementsHelp"
+                placeholder="button, a.link, [href]"
+              />
+              <small id="elementsHelp" class="form-text text-muted"
+                >The list of css selectors elements that need to be
+                checked.</small
+              >
+            </div>
+            <div class="form-group">
+              <label for="attribute">Attribute</label>
+              <input
+                type="text"
+                class="form-control"
+                id="attribute"
+                aria-describedby="attributeHelp"
+                placeholder="data-custom-attribute"
+              />
+              <small id="attributeHelp" class="form-text text-muted"
+                >The html attribute that contains the data you want to
+                check.</small
+              >
+            </div>
+            <div class="form-group">
+              <label for="jsonKeys">JSON keys</label>
+              <input
+                type="text"
+                class="form-control"
+                id="jsonKeys"
+                aria-describedby="jsonKeysHelp"
+                placeholder="foo, bar"
+              />
+              <small id="jsonKeysHelp" class="form-text text-muted"
+                >If the content of the attribute should be a JSON object, define
+                here the list of properties it should have.</small
+              >
+            </div>
+            <button type="submit" class="btn btn-info mt-3">
+              Update
+            </button>
+            <button id="reset" type="button" class="btn btn-danger mt-3 ml-2">
+              Reset
+            </button>
+            <span
+              id="status"
+              class="text-success align-bottom d-inline-block ml-3 pb-2"
+            ></span>
+          </form>
+        </div>
+      </div>
+
+      <!-- Fontawesome -->
+      <script
+        src="https://kit.fontawesome.com/d4dec511d9.js"
+        crossorigin="anonymous"
+      ></script>
+
+      <!-- Options -->
+      <script src="options.js"></script>
+    </body>
+  </head>
+</html>
