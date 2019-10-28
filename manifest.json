@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "Dometik",
+  "description": "Check if some elements on a page have a specific attribute",
+  "version": "0.1.0",
+  "author": "Marie Rigal",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png"
+  }
+}
